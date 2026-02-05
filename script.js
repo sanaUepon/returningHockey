@@ -1,4 +1,4 @@
-import * as THREE from "./build/three.module.js"
+import * as THREE from 'https://unpkg.com/three@0.158.0/build/three.module.js';
 import { FlyControls } from "./jsm/controls/FlyControls.js";
 import { Lensflare, LensflareElement } from "./jsm/objects/Lensflare.js";
 
