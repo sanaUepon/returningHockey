@@ -23,6 +23,8 @@ function init(){
     //scene
     scene = new THREE.Scene();
 
+    scene.background = new THREE.Color(0x000000);
+
     //geometry
     const radius = 5; 
     const geometry = new THREE.SphereGeometry(radius, 12, 12);
