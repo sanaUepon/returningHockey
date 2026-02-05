@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+header{
+    position: absolute;
+    right: 10%;
+    padding: 40px;
+}
+
+.title-area {
+  display: inline-block; /* 中身の幅 = 文字幅 */
+  text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+main{
+    position: absolute;
+    right: 10%;
+    top: 37%;
+}
+
+main h1 {
+    color: white;
+    font-size: 5.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    position: relative;
+}
+
+main h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -500px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 8px 0 6px 0;
+    opacity: 0;
+    animation: moveToLeft 3s ease-in-out forwards;
+}
+
+/* .line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px 0 6px 0;
+
+  animation: stretch 1.5s ease-in-out infinite alternate;
+} */
+
+
+
+/* main h3 {
+    text-decoration: none;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    text-align: right;
+    margin-top: 20px;
+    right: -500px;
+    animation: moveToLeft 3s ease-in-out forwards;
+
+} */
+
+/* .play-now {
+  color: #000;
+  background: #ffffff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-align: right;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+} */
+
+.play-now {
+  color: #000;
+  background: #ffffff;
+  padding: 16px 32px;
+  border-radius: 30px;
+
+  display: inline-block; 
+
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 4px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.play-now:hover {
+  background: #ffd334;
+  transform: scale(1.05);
+}
+
+.play-row {
+  display: flex;
+  justify-content: flex-end; /* 右端基準 */
+  align-items: center;
+  gap: 12px; /* 文字とボタンの間隔 */
+}
+
+/* .play-row:hover .game-desc {
+  color: #fff;
+} */
+
+.game-desc {
+  font-size: 0.85rem;
+  color: #aaa;
+  white-space: nowrap; /* 改行させない */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.6);
+  z-index: 10;
+  pointer-events: none; /* three.js操作を邪魔しない */
+}
+
+.footer p {
+  margin: 0;
+}
+
+@keyframes moveToLeft{
+    to{
+        transform: translateX(-500px);
+        opacity: 1;
+    }
+}
+
+/* @keyframes stretch {
+  from {
+    transform: scaleX(0.2);
+    transform-origin: left;
+  }
+  to {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+} */

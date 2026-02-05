@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "portfolio site02",
+			"path": "."
+		},
+		{
+			"name": "build",
+			"path": "../../../../Applications/three.js-master/build"
+		},
+		{
+			"name": "jsm",
+			"path": "../../../../Applications/three.js-master/examples/jsm"
+		},
+		{
+			"path": "../lensflares-website-three.js-main/textures"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfolio site02"
+	}
+}
